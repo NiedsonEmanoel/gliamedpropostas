@@ -6,6 +6,112 @@
   <title>Hello Word</title>
 </head>
 <body>
-  <h1>hello word em HTML</h1>
+<!-- Barra da Proposta -->
+<div id="proposal-banner">
+    <div class="proposal-content">
+        <span class="proposal-title">
+            <strong>Agência Gliamed</strong>
+            <span class="divider">•</span>
+            Proposta de atualização de site
+            <span class="divider">•</span>
+            Niedson Emanoel
+        </span>
+
+        <span class="proposal-contact">
+            📱 WhatsApp:
+            <a href="https://wa.me/5587996755665" target="_blank">
+                (87) 9 9675-5665
+            </a>
+
+            <span class="divider">•</span>
+
+            ✉️
+            <a href="mailto:contato@niedsonemanoel.com.br">
+                contato@niedsonemanoel.com.br
+            </a>
+        </span>
+    </div>
+</div>
+
+<style>
+#proposal-banner{
+    width:100%;
+    background:linear-gradient(90deg,#0f172a,#1d4ed8);
+    color:#fff;
+
+    padding:12px 24px;
+
+    font-family:Inter,Arial,sans-serif;
+
+    border-bottom:3px solid #60a5fa;
+
+    box-sizing:border-box;
+}
+
+#proposal-banner .proposal-content{
+    max-width:1400px;
+    margin:0 auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:24px;
+    flex-wrap:wrap;
+}
+
+#proposal-banner .proposal-title{
+    font-size:15px;
+    font-weight:600;
+}
+
+#proposal-banner strong{
+    color:#93c5fd;
+}
+
+#proposal-banner .proposal-contact{
+    font-size:14px;
+}
+
+#proposal-banner a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:color .2s;
+}
+
+#proposal-banner a:hover{
+    color:#93c5fd;
+}
+
+#proposal-banner .divider{
+    margin:0 10px;
+    opacity:.45;
+}
+
+@media (max-width:900px){
+
+    #proposal-banner{
+        padding:14px 16px;
+    }
+
+    #proposal-banner .proposal-content{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:8px;
+    }
+
+    #proposal-banner .proposal-title,
+    #proposal-banner .proposal-contact{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+    #proposal-banner .divider{
+        display:none;
+    }
+}
+</style>
+<!-- Fim da Barra da Proposta -->
 </body>
 </html>
